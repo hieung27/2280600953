@@ -1,0 +1,24 @@
+﻿<h2>Danh sách Sản phẩm</h2>
+
+<!-- Form thêm/sửa sản phẩm -->
+<input type="hidden" id="productId">
+<input type="text" id="productName" placeholder="Tên sản phẩm">
+<input type="number" id="productPrice" placeholder="Giá">
+<button onclick="addProduct()">Thêm</button>
+<button onclick="updateProduct()">Cập nhật</button>
+
+<!-- Bảng hiển thị sản phẩm -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên Sản Phẩm</th>
+            <th>Giá</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody id="productTable"></tbody>
+</table>
+
+<!-- Nhúng file JavaScript -->
+<script src="~/js/product.js"></script>
